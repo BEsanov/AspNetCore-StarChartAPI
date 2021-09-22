@@ -34,18 +34,18 @@ namespace StarChart.Controllers
             }
             return NotFound();
         }
-        [HttpGet("{name}")]
-        public IActionResult GetByName(string name)
-        {
-            var matchedClSObject = _context.CelestialObjects.FirstOrDefault(c => c.Name == name);
-            if (matchedClSObject == null)
-            {
-                return NotFound();
-            }
-            foreach (var it in matchedClSObject)
-            {
+        //[HttpGet("{name}")]
+        //public IActionResult GetByName(string name)
+        //{
+        //    var matchedClSObject = _context.CelestialObjects.FirstOrDefault(c => c.Name == name);
+        //    if (matchedClSObject == null)
+        //    {
+        //        return NotFound();
+        //    }
+        //    foreach (var it in matchedClSObject)
+        //    {
 
-            }
-        }
+        //    }
+        //}
     }
 }
